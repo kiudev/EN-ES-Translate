@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Translate App</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <main>
+         <section id="translateContainer">
+            <header>
+               <nav>
+                  <ul>
+                     <li id="enTranslation" value="en">English</li>
+                     <li id="esTranslation" value="es">Spanish</li>
+                  </ul>
+               </nav>
+
+               <hr />
+            </header>
+
+            <section id="textContainer">
+               <textarea
+                  name=""
+                  id="query"
+                  cols="30"
+                  rows="10"
+                  maxlength="500"
+               ></textarea>
+               <div id="the-count">
+                  <span id="current"></span>
+                  <span id="maximum">/ 500</span>
+               </div>
+            </section>
+
+            <footer class="translateFooter">
+               <div id="leftOptions">
+                  <button id="copyBtnTranslate">
+                     <img src="assets/Copy.svg" alt="Copy" />
+                  </button>
+
+                  <p id="copyTextTranslate"></p>
+               </div>
+
+               <div id="rightOptions">
+                  <button id="translateBtn">
+                     <img src="assets/Sort_alfa.svg" alt="Alfa" />Translate
+                  </button>
+               </div>
+            </footer>
+         </section>
+
+         <section id="resultContainer">
+            <header>
+               <nav>
+                  <ul>
+                     <li id="enResult" value="en">English</li>
+                     <li id="esResult" value="es">Spanish</li>
+                  </ul>
+
+                  <button id="reverseBtn">
+                     <img src="assets/Horizontal_top_left_main.svg" alt="" />
+                  </button>
+               </nav>
+
+               <hr />
+            </header>
+
+            <section>
+               <textarea
+                  name=""
+                  id="translation"
+                  cols="30"
+                  rows="10"
+                  maxlength="500"
+                  readonly
+               ></textarea>
+            </section>
+
+            <footer class="resultFooter">
+               <div>
+                  <button id="soundBtnResult">
+                     <img src="assets/sound_max_fill.svg" alt="Sound Max" />
+                  </button>
+
+                  <button id="copyBtnResult">
+                     <img src="assets/Copy.svg" alt="Copy" />
+                  </button>
+
+                  <p id="copyTextResult"></p>
+               </div>
+
+               <select name="voices" id="voiceSelect"></select>
+            </footer>
+         </section>
+      </main>
+
+      <footer class="copyright">
+         <p>
+            Made with ❤️ by
+            <a target="_blank" href="https://github.com/kiudev"
+               >Daniel Saavedra</a
+            >
+         </p>
+      </footer>
+      <script src="script.js"></script>
+   </body>
+</html>
